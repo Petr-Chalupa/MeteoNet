@@ -1,0 +1,23 @@
+# --- Firmware ---
+.vscode/
+bin/
+obj/
+*.o
+*.elf
+*.bin
+*.hex 
+
+# --- Hardware ---
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*_autosave-*
+*.tmp
+*.lck
+*.zip
+*-save.kicad_pcb
+fp-info-cache
+/hardware/_autosave-*
+/hardware/plots/
+/hardware/gerbers/
+
