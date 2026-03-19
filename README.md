@@ -13,4 +13,4 @@ Focusing on low power consumption, low data TX and near/far communication.
 > Simple design  
 > One HW, multiple roles strategy
 
-_For more thourough documentation, please see [docs](/docs)._
+_For more thorough documentation, please see [docs](/docs)._
