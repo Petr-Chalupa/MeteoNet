@@ -6,7 +6,7 @@ Focusing on low power consumption, low data TX and near/far communication.
 ### FW
 > Written in C++  
 > No runtime memalloc strategy  
-> No unneccessary C++ features
+> No unnecessary C++ features
 
 ### HW
 > Developed in KiCAD  
