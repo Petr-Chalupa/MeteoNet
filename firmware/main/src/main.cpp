@@ -2,4 +2,4 @@
 #include "wifi.hpp"
 #endif
 
-int main() { return 0; }
+extern "C" void app_main() { return; }
