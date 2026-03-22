@@ -1,4 +1,4 @@
-#ifdef IS_ROOT_NODE
+#ifdef IS_ROOT
 #include "wifi.hpp"
 #endif
 
