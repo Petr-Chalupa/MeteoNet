@@ -10,6 +10,12 @@ public:
   [[nodiscard]] virtual bool init() = 0;
 
   /**
+   * Deinitializes the sensor.
+   * Prepares its pins for deep sleep.
+   */
+  virtual void deinit() = 0;
+
+  /**
    * Reads sensor value into out.
    * @param out Reference to store the sensor reading
    * @return true  If reading was successful

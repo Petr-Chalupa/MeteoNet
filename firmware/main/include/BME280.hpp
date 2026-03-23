@@ -12,5 +12,7 @@ class BME280 : ISensor<BME280Data> {
 public:
   bool init() override { return false; }
 
+  void deinit() override { return; }
+
   bool read(BME280Data &out) override { return false; }
 };
