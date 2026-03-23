@@ -62,11 +62,20 @@ public:
     return true;
   }
 
-  [[nodiscard]] bool is_empty() const { return count == 0; }
+  [[nodiscard]] bool is_empty() {
+    Lock::Guard<TLock> guard(lock);
+    return count == 0;
+  }
 
-  [[nodiscard]] bool is_full() const { return count == N; }
+  [[nodiscard]] bool is_full() {
+    Lock::Guard<TLock> guard(lock);
+    return count == N;
+  }
 
-  [[nodiscard]] size_t size() const { return count; }
+  [[nodiscard]] size_t size() {
+    Lock::Guard<TLock> guard(lock);
+    return count;
+  }
 
   [[nodiscard]] size_t capacity() const { return N; }
 };
