@@ -17,13 +17,17 @@ using RX_CB = void (*)(Packet);
  * Connection attempt is retried 5 times.
  * @param ssid The string containing the WiFi network name
  * @param pwd  The string containing the WiFi password
+ * @return true  If the stack was initialized
+ * @return false Otherwise
  */
-void init(const char *ssid, const char *pwd);
+[[nodiscard]] bool init(const char *ssid, const char *pwd);
 
 /**
  * Disconnects from WiFi network and deinitializes the WiFi stack
+ * @return true  If the stack was deinitialized
+ * @return false Otherwise
  */
-void disconnect();
+[[nodiscard]] bool disconnect();
 
 /**
  * Checks the current network connectivity status.

@@ -14,13 +14,17 @@ using RX_CB = void (*)(Packet);
 
 /**
  * Initializes the LoRa module.
+ * @return true  If the stack was initialized
+ * @return false Otherwise
  */
-void init();
+[[nodiscard]] bool init();
 
 /**
  * Deinitializes the LoRa module.
+ * @return true  If the stack was deinitialized
+ * @return false Otherwise
  */
-void deinit();
+[[nodiscard]] bool deinit();
 
 /**
  * Checks if the LoRa module is ready.
