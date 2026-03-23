@@ -13,6 +13,9 @@ struct NoLock {
 struct FreeRTOSMutex {
   SemaphoreHandle_t handle;
 
+  FreeRTOSMutex(const FreeRTOSMutex &) = delete;
+  FreeRTOSMutex &operator=(const FreeRTOSMutex &) = delete;
+
   FreeRTOSMutex() { handle = xSemaphoreCreateMutex(); }
   ~FreeRTOSMutex() { vSemaphoreDelete(handle); }
 
