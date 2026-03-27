@@ -4,8 +4,8 @@
 # ESP-IDF build / flash / monitor script
 # ==========================
 
-ESP_IDF_PATH=~/esp/esp-idf        
-PORT="/dev/ttyACM0"             
+ESP_IDF_PATH=~/esp/esp-idf
+PORT="/dev/ttyACM0"
 FLASH=false
 MONITOR=false
 EXTRA_ARGS=""
@@ -17,7 +17,7 @@ while getopts "fmp:a:" opt; do
         m) MONITOR=true ;;
         p) PORT="$OPTARG" ;;
         a) EXTRA_ARGS="$OPTARG" ;;
-        *) 
+        *)
             echo "Usage: $0 [-f flash] [-m monitor] [-p port] [-a 'CMAKE_ARGS']"
             exit 1
             ;;

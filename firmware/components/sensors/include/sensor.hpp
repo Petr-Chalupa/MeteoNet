@@ -11,7 +11,7 @@ public:
 
   /**
    * Deinitializes the sensor.
-   * Prepares its pins for deep sleep.
+   * Prepares it for deep sleep.
    */
   virtual void deinit() = 0;
 

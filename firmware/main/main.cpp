@@ -1,3 +1,5 @@
+#include "lora.hpp"
+
 #ifdef IS_ROOT
 #include "wifi.hpp"
 #endif
