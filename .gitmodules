@@ -1,3 +1,0 @@
-[submodule "firmware/components/drivers/bme280"]
-	path = firmware/components/drivers/bme280
-	url = https://github.com/boschsensortec/BME280_SensorAPI

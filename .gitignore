@@ -2,10 +2,12 @@
 .vscode/
 build/
 sdkconfig
+managed_components/
 *.o
 *.elf
 *.bin
 *.hex 
+*.lock
 
 # --- Hardware ---
 *.bak
