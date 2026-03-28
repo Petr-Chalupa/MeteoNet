@@ -13,18 +13,28 @@ struct Packet {
 using RX_CB = void (*)(Packet);
 
 /**
- * Initializes the WiFi stack and attempts to connect.
- * Connection attempt is retried 5 times.
- * @param ssid The string containing the WiFi network name
- * @param pwd  The string containing the WiFi password
+ * Initializes the WiFi stack
  * @return true  If the stack was initialized
  * @return false Otherwise
  */
-[[nodiscard]] bool init(const char *ssid, const char *pwd);
+[[nodiscard]] bool init();
 
 /**
- * Disconnects from WiFi network and deinitializes the WiFi stack
- * @return true  If the stack was deinitialized
+ * Deinitializes the WiFi stack.
+ * Prepares for deep sleep or complete reset.
+ */
+void deinit();
+
+/**
+ * Attempts to connect to WiFi network 5 times.
+ * @param ssid The string containing the WiFi network name
+ * @param pwd  The string containing the WiFi password
+ */
+void connect(const char *ssid, const char *pwd);
+
+/**
+ * Disconnects from WiFi network
+ * @return true  If the disconnection was successful
  * @return false Otherwise
  */
 [[nodiscard]] bool disconnect();
@@ -39,11 +49,10 @@ using RX_CB = void (*)(Packet);
 /**
  * Sends packet via WiFi
  * @param data  The data to send
- * @param flush Whether to send whole TX data buffer immediately
- * @return true  If the packet was successfully put into TX buffer
+ * @return true  If the packet was successfully sent
  * @return false Otherwise
  */
-[[nodiscard]] bool tx(const Packet &data, bool flush);
+[[nodiscard]] bool tx(const Packet &data);
 
 /**
  * Registers callback for data RX
