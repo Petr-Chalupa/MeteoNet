@@ -1,8 +1,8 @@
 #pragma once
 
-#include "bme280.h"
-#include "driver/i2c_master.h"
 #include "sensor.hpp"
+#include <bme280.h>
+#include <driver/i2c_master.h>
 
 struct BME280Data {
   float temperature;

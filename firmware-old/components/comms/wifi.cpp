@@ -5,6 +5,8 @@
 #include "nvs_flash.h"
 #include <cstring>
 
+static WiFi::RX_CB _wifi_rx_cb = nullptr;
+
 bool WiFi::init() {
   esp_err_t nvs_err = nvs_flash_init();
   if (nvs_err == ESP_ERR_NVS_NO_FREE_PAGES || nvs_err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
@@ -27,6 +29,8 @@ bool WiFi::init() {
 }
 
 void WiFi::deinit() {
+  _wifi_rx_cb = nullptr;
+  esp_wifi_stop();
   esp_wifi_deinit();
   esp_event_loop_delete_default();
   esp_netif_deinit();
@@ -59,4 +63,14 @@ bool WiFi::is_connected() {
   }
 
   return false;
+}
+
+bool WiFi::tx(const Packet &data) {
+  // todo
+  return false;
+}
+
+void WiFi::rx(RX_CB cb) {
+  _wifi_rx_cb = cb;
+  // todo
 }

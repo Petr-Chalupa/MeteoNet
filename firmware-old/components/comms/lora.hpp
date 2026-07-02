@@ -21,10 +21,8 @@ using RX_CB = void (*)(Packet);
 
 /**
  * Deinitializes the LoRa module.
- * @return true  If the stack was deinitialized
- * @return false Otherwise
  */
-[[nodiscard]] bool deinit();
+void deinit();
 
 /**
  * Checks if the LoRa module is ready.
@@ -35,12 +33,11 @@ using RX_CB = void (*)(Packet);
 
 /**
  * Sends packet via LoRa
- * @param data  The data to send
- * @param flush Whether to send whole TX data buffer immediately
- * @return true  If the packet was successfully put into TX buffer
+ * @param data Packet to send
+ * @return true  If sent successfully
  * @return false Otherwise
  */
-[[nodiscard]] bool tx(const Packet &data, bool flush);
+[[nodiscard]] bool tx(const Packet &data);
 
 /**
  * Registers callback for data RX

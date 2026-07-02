@@ -1,8 +1,8 @@
 #pragma once
 
-#include "ds18b20.h"
-#include "onewire_bus.h"
 #include "sensor.hpp"
+#include <ds18b20.h>
+#include <onewire_bus.h>
 
 class DS18B20 : ISensor<float> {
   onewire_bus_handle_t _bus_handle;
