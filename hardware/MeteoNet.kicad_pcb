@@ -1754,7 +1754,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "261a624b-89a5-42e4-b970-3f8cbc036eaa")
-		(at 41.505 68.325)
+		(at 41.505 66.625)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP3"
@@ -1770,7 +1770,7 @@
 		)
 		(property "Value" "GND"
 			(at 0 1.75 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "6a484b9b-5a6d-4d37-9412-8582011b814f")
 			(effects
 				(font
@@ -4338,7 +4338,7 @@
 		(descr "surface-mounted straight socket strip, 1x04, 2.54mm pitch, single row, style 1 (pin 1 left) (https://cdn.harwin.com/pdfs/M20-786.pdf), script generated")
 		(tags "Surface mounted socket strip SMD 1x04 2.54mm single row style1 pin1 left")
 		(property "Reference" "J4"
-			(at 0 -6.68 90)
+			(at -0.015 -6.44 90)
 			(layer "F.SilkS")
 			(uuid "514e87da-0bef-4d1c-be33-4f7e035ef7c9")
 			(effects
@@ -4349,8 +4349,8 @@
 			)
 		)
 		(property "Value" "BME280"
-			(at 0 6.68 90)
-			(layer "F.Fab")
+			(at 0 6.285 90)
+			(layer "F.SilkS")
 			(uuid "40ffe381-2255-472f-a104-42ab53748c45")
 			(effects
 				(font
@@ -7001,7 +7001,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "8e7d4843-c83f-496e-90e1-872e390e1019")
-		(at 41.505 64.775)
+		(at 41.505 61.475)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP2"
@@ -7017,7 +7017,7 @@
 		)
 		(property "Value" "RXD0"
 			(at 0 1.75 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "bebeb1dc-36e2-47c0-87f8-73e9cf5a3706")
 			(effects
 				(font
@@ -7128,9 +7128,9 @@
 		(descr "surface-mounted straight socket strip, 1x03, 2.54mm pitch, single row, style 1 (pin 1 left) (https://cdn.harwin.com/pdfs/M20-786.pdf), script generated")
 		(tags "Surface mounted socket strip SMD 1x03 2.54mm single row style1 pin1 left")
 		(property "Reference" "J3"
-			(at 0 -5.41 90)
+			(at -0.0125 6.315 90)
 			(layer "F.SilkS")
-			(uuid "9b83cec2-da1a-4a12-8903-7a14c658ee6d")
+			(uuid "549325d7-bc3d-453a-98a2-cad5ad6d767e")
 			(effects
 				(font
 					(size 1 1)
@@ -7139,9 +7139,9 @@
 			)
 		)
 		(property "Value" "DS18B20"
-			(at 0 5.41 90)
-			(layer "F.Fab")
-			(uuid "e875e343-d3f1-492d-8c80-e87700b79ec8")
+			(at -0.0125 5.065 90)
+			(layer "F.SilkS")
+			(uuid "f2137ae7-7d5e-4065-82d0-defc867956ed")
 			(effects
 				(font
 					(size 1 1)
@@ -7153,7 +7153,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a2161e69-d474-4c1f-bd4a-a35e26e79521")
+			(uuid "933d4940-03ee-41fc-b6c1-90ac6fde1d5b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7164,7 +7164,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fdeae822-ad1f-4a5c-a6c3-1ab617e15f76")
+			(uuid "92b59b89-dc64-4fff-8987-01f0b462e95e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10664,7 +10664,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "d829fbc3-feeb-4709-a54d-d74df39f6d18")
-		(at 41.505 61.225)
+		(at 41.505 56.225)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP1"
@@ -10680,7 +10680,7 @@
 		)
 		(property "Value" "TXD0"
 			(at 0 1.75 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "2507b578-35f0-4458-9e58-d5ae6107676e")
 			(effects
 				(font
@@ -10787,7 +10787,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "dc82ca4c-70f0-4c4f-a587-8db53f9987db")
-		(at 45.055 68.325)
+		(at 47.35 66.675)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP6"
@@ -10803,7 +10803,7 @@
 		)
 		(property "Value" "USB_VBUS"
 			(at 0 1.75 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "e396ba5f-107a-451b-9a34-593b9146679b")
 			(effects
 				(font
@@ -11288,7 +11288,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "ee6556a9-bbfa-4c51-a6f6-e7b91760f77e")
-		(at 45.055 61.225)
+		(at 46.65 56.225)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP4"
@@ -11304,7 +11304,7 @@
 		)
 		(property "Value" "LDO_3V3"
 			(at 0 1.75 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "2b48b420-53b0-4442-9c25-4e20a572f282")
 			(effects
 				(font
@@ -11790,7 +11790,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "ff48eee3-bf7c-4e50-b7de-bf58429121ea")
-		(at 45.055 64.775)
+		(at 47.025 61.5)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP5"
@@ -11806,7 +11806,7 @@
 		)
 		(property "Value" "VBAT"
 			(at 0 1.75 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "e0ba7afb-7210-49fb-a737-f17faa5c500a")
 			(effects
 				(font
