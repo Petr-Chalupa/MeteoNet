@@ -6754,7 +6754,7 @@
 		(uuid "36c3dcb0-31ae-4a3a-83d2-5860cdee9e82")
 	)
 	(label "IO6"
-		(at 160.02 158.75 180)
+		(at 160.02 175.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6794,7 +6794,7 @@
 		(uuid "62884a53-eecc-43bc-8ee0-9484905765a0")
 	)
 	(label "IO7"
-		(at 160.02 175.26 180)
+		(at 160.02 158.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14589,7 +14589,6 @@
 	(symbol
 		(lib_id "JLCPCB_Capacitors:CL05B104KO5NNNC")
 		(at 201.93 224.79 0)
-		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
